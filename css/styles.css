@@ -14,6 +14,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     text-decoration: none;
+    flex-direction: row;
 }
 
 nav li a {
@@ -22,6 +23,17 @@ nav li a {
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
 
 nav li a:hover {
